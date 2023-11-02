@@ -1,5 +1,7 @@
 import Roxo from "../../img/Roupas/image10.png";
 import Laranja from "../../img/Roupas/image11.png";
+import CamisaBranca from "../../img/Roupas/imagem1.png";
+import CamisaManga from "../../img/Roupas/imagem2.png";
 import "./index.css";
 function Catalogo() {
   const catalogo = [
@@ -42,32 +44,32 @@ function Catalogo() {
       name: "Jaqueta roxa",
       descricao: "Jaqueta roxa otima para o frio",
       price: 80,
-      img: Roxo,
+      img: CamisaBranca,
       tamanho: {
         p: "P",
         m: "M",
         g: "G",
       },
       qtd: {
-        p: 5,
-        m: 10,
-        g: 0,
+        p: 15,
+        m: 0,
+        g: 5,
       },
     },{
       id: 2,
-      name: "Jaqueta roxa",
-      descricao: "Jaqueta roxa otima para o frio",
+      name: "Camiseta Longline Manga Longa Chumbo - Fairbanks",
+      descricao: "Camiseta Longline Manga Longa Chumbo - Fairbanks",
       price: 80,
-      img: Roxo,
+      img: CamisaManga,
       tamanho: {
         p: "P",
         m: "M",
         g: "G",
       },
       qtd: {
-        p: 5,
-        m: 10,
-        g: 0,
+        p: 6,
+        m: 4,
+        g: 7,
       },
     }
   ];
@@ -117,7 +119,7 @@ function Catalogo() {
                       <input type="checkbox" id={item.tamanho.g} />
                       {item.qtd.g >= 1 ? (
                         <>
-                          {item.tamanho.g} - {item.qtd.g} Unidades
+                          {item.tamanho.g} - {item.qtd.g} Unidades disponivel
                         </>
                       ) : (
                         <>{item.tamanho.g} - Indisponivel</>

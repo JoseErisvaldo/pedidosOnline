@@ -12,6 +12,7 @@
     align-items: center;
     margin: 10px;
     width: 280px;
+    height: 580px;
 }
 .card-catalogo button {
     width: 100%;
@@ -25,8 +26,14 @@
     color: aliceblue;
 }
 .container-catalogo {
+    height: 500px;
     display: flex;
     flex-direction: column;
+}
+.container-catalogo div img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
 }
 .container-catalogo  div ul li {
     list-style: none;  
