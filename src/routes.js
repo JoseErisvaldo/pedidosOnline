@@ -1,7 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Page/Home'
 import Header from './Components/Header'
 import Logo from './Components/Logo'
+
+import Home from './Page/Home'
+import News from './Page/News'
+import Category from './Page/Category'
+import About from './Page/About'
+import Erro from './Page/Erro'
 
 function RoutesApp () {
     return(
@@ -12,6 +17,12 @@ function RoutesApp () {
                 <Header/>
                 <Routes>
                     <Route path='/' element={<Home/>} />
+                    <Route path='/novidades' element={<News/>} />
+                    <Route path='/categorias' element={<Category/>} />
+                    <Route path='/sobre' element={<About/>} />
+
+
+                    <Route path='*' element={<Erro/>}/>
                 </Routes>
             </BrowserRouter>
 
