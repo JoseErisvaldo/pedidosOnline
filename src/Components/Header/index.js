@@ -6,8 +6,14 @@ function Header() {
   return (
     <div className="nav-bar">
       <div className="nav-user">
-        <BiListUl />
-        <BiUser />
+        <div>
+          <Link to="/pedidos" ><BiListUl /></Link>
+          
+        </div>
+        <div>
+          <Link to="/minha-conta" ><BiUser /></Link>
+          
+        </div>
       </div>
       <ul>
         <li>
