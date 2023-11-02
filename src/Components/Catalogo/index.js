@@ -37,6 +37,39 @@ function Catalogo() {
         g: 0,
       },
     },
+    {
+      id: 2,
+      name: "Jaqueta roxa",
+      descricao: "Jaqueta roxa otima para o frio",
+      price: 80,
+      img: Roxo,
+      tamanho: {
+        p: "P",
+        m: "M",
+        g: "G",
+      },
+      qtd: {
+        p: 5,
+        m: 10,
+        g: 0,
+      },
+    },{
+      id: 2,
+      name: "Jaqueta roxa",
+      descricao: "Jaqueta roxa otima para o frio",
+      price: 80,
+      img: Roxo,
+      tamanho: {
+        p: "P",
+        m: "M",
+        g: "G",
+      },
+      qtd: {
+        p: 5,
+        m: 10,
+        g: 0,
+      },
+    }
   ];
 
   return (
