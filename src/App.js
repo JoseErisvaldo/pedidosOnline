@@ -1,6 +1,6 @@
 import React from 'react';
 import RoutesApp from './routes';
-import logo from './img/Fundo/logi.jpg';
+
 
 
 function App() {
