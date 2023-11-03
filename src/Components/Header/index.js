@@ -2,13 +2,17 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { BiListUl } from "react-icons/bi";
+import { BiCartAlt } from "react-icons/bi";
+
 function Header() {
   return (
     <div className="nav-bar">
       <div className="nav-user">
         <div>
-          <Link to="/pedidos" ><BiListUl /></Link>
-          
+          <Link to="/meu-carrinho" ><BiCartAlt /></Link>
+        </div>
+        <div>
+          <Link to="/pedidos" ><BiListUl /></Link>          
         </div>
         <div>
           <Link to="/minha-conta" ><BiUser /></Link>
