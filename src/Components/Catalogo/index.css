@@ -12,7 +12,7 @@
     align-items: center;
     margin: 10px;
     width: 280px;
-    height: 580px;
+    height: 680px;
 }
 .card-catalogo button {
     width: 100%;
@@ -26,7 +26,7 @@
     color: aliceblue;
 }
 .container-catalogo {
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -35,6 +35,24 @@
     height: 250px;
     object-fit: contain;
 }
+.dados-catalogo {
+    height: 190px;
+}
+.dados-catalogo div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    height: 52px;
+}
+.dados-catalogo span {
+    margin: 10px;
+    font-size: 30px;
+}
+.price-antigo {
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
 .container-catalogo  div ul li {
     list-style: none;  
     margin: 5px; 
@@ -52,6 +70,8 @@
     background-color: rgb(68, 13, 232);
     
 }
-.dados-catalogo div ul {
-   margin-left: -40px;
+.detalhes {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }

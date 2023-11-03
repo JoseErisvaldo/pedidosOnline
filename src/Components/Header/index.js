@@ -9,7 +9,7 @@ function Header() {
     <div className="nav-bar">
       <div className="nav-user">
         <div>
-          <Link to="/meu-carrinho" ><BiCartAlt /></Link>
+          <Link to="/carrinho" ><BiCartAlt /></Link>
         </div>
         <div>
           <Link to="/pedidos" ><BiListUl /></Link>          

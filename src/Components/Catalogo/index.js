@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
 import Roxo from "../../img/Roupas/image10.png";
 import Laranja from "../../img/Roupas/image11.png";
 import CamisaBranca from "../../img/Roupas/imagem1.png";
 import CamisaManga from "../../img/Roupas/imagem2.png";
+
+import { useParams } from "react-router-dom";
 import "./index.css";
 function Catalogo() {
   const catalogo = [
     {
       id: 1,
       name: "Jaqueta laranja",
-      descricao: "Jaqueta laranja otima para o frio",
-      price: 80,
+      descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      price: 124,
       img: Laranja,
       tamanho: {
         p: "P",
@@ -25,8 +28,8 @@ function Catalogo() {
     {
       id: 2,
       name: "Jaqueta roxa",
-      descricao: "Jaqueta roxa otima para o frio",
-      price: 80,
+      descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      price: 90,
       img: Roxo,
       tamanho: {
         p: "P",
@@ -40,10 +43,10 @@ function Catalogo() {
       },
     },
     {
-      id: 2,
+      id: 3,
       name: "Jaqueta roxa",
-      descricao: "Jaqueta roxa otima para o frio",
-      price: 80,
+      descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      price: 70,
       img: CamisaBranca,
       tamanho: {
         p: "P",
@@ -56,10 +59,10 @@ function Catalogo() {
         g: 5,
       },
     },{
-      id: 2,
+      id: 4,
       name: "Camiseta Longline Manga Longa Chumbo - Fairbanks",
-      descricao: "Camiseta Longline Manga Longa Chumbo - Fairbanks",
-      price: 80,
+      descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      price: 99,
       img: CamisaManga,
       tamanho: {
         p: "P",
@@ -91,6 +94,11 @@ function Catalogo() {
                 <div className="dados-catalogo">
                   <h3>{item.name}</h3>
                   <div>{item.descricao}</div>
+                  <br></br>
+                  <span>
+                    R$:{item.price}
+                    <div className="price-antigo">De R$: 120</div>
+                  </span>
                 </div>
                 <div>
                   <ul>
@@ -129,9 +137,10 @@ function Catalogo() {
                 </div>
               </div>
               <div>
-                <button>-</button>
+                <button  key={item.id}>-</button>
                 <span>0</span>
-                <button>+</button>
+                <button key={item.id}>+</button>
+                <Link to={`/detalhes/${item.id}`} className="detalhes" >Ver detalhes</Link>
               </div>
             </div>
           ))}
