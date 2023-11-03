@@ -9,6 +9,8 @@ import About from './Page/About'
 import Erro from './Page/Erro'
 import Order from './Page/Order'
 import Detalhes from './Page/Detalhes'
+import User from './Page/User'
+import Carrinho from './Page/Carrinho'
 
 function RoutesApp () {
     return(
@@ -22,8 +24,10 @@ function RoutesApp () {
                     <Route path='/novidades' element={<News/>} />
                     <Route path='/categorias' element={<Category/>} />
                     <Route path='/sobre' element={<About/>} />
-                    <Route path="/meu-carrinho" element={<Order/>} />
+                    <Route path="/pedidos" element={<Order/>} />
                     <Route path="/detalhes/:id" element={<Detalhes/>}/>
+                    <Route path="/minha-conta" element={<User/>} />
+                    <Route path="/carrinho" element={<Carrinho/>} />
 
 
                     <Route path='*' element={<Erro/>}/>
