@@ -7,6 +7,8 @@ import News from './Page/News'
 import Category from './Page/Category'
 import About from './Page/About'
 import Erro from './Page/Erro'
+import Order from './Page/Order'
+import Detalhes from './Page/Detalhes'
 
 function RoutesApp () {
     return(
@@ -20,6 +22,8 @@ function RoutesApp () {
                     <Route path='/novidades' element={<News/>} />
                     <Route path='/categorias' element={<Category/>} />
                     <Route path='/sobre' element={<About/>} />
+                    <Route path="/meu-carrinho" element={<Order/>} />
+                    <Route path="/detalhes/:id" element={<Detalhes/>}/>
 
 
                     <Route path='*' element={<Erro/>}/>
