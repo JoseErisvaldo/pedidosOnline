@@ -12,6 +12,7 @@
     list-style: none;
 }
 .nav-bar ul li a {
+
     text-decoration: none;
     color: #ffffff; /* Cor azul, você pode personalizar a cor desejada */
     font-weight: bold;
