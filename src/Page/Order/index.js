@@ -2,7 +2,7 @@
 function Order () {
     return(
         <div>
-            My order
+           <h1>Pedidos em desenvolvimento</h1>
         </div>
     )
 }

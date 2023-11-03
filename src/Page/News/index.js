@@ -1,6 +1,6 @@
 function News () {
     return(
-        <div>News</div>
+        <div><h1>Novidades em desenvolvimento</h1></div>
     )
 }
 
