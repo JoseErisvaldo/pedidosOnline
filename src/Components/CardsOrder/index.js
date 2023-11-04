@@ -3,14 +3,13 @@ import "./style.css";
 import dadosOrder from "../../dadosExport/dadosOrder";
 import Users from "../../dadosExport/Users";
 
-import Imagem from "../../img/Roupas/imagem1.png";
+
 function CardOrders() {
-  const autenticadoUser = 2;
+  const autenticadoUser = 3;
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    // Mapeie os IDs de mapOrders e mapUsers para criar um novo array de objetos correspondentes
-    const mapOrders = dadosOrder.map((order) => {
+      const mapOrders = dadosOrder.map((order) => {
       const mapUsers = Users.find((item) => item.id_user === order.id_user);
       if (mapUsers) {
         return {
@@ -23,8 +22,8 @@ function CardOrders() {
     });
     setOrders(mapOrders);
   }, []);
-  console.log(orders[1]);
-
+  
+  
   return (
     <div>
       <div className="title-order">
@@ -32,7 +31,7 @@ function CardOrders() {
         <hr></hr>
       </div>
       <div>
-        {orders.map((orderFil) => (
+        {orders.filter((item) => item.id_user === autenticadoUser).map((orderFil) => (
             <div key={orderFil.id_user} id="container-orders">
               <div className="container-card-order">
                 <h3>Pedido: {orderFil.pedido}</h3>
@@ -78,7 +77,7 @@ function CardOrders() {
                   </div>
                 </div>
                 <div className="price-order">
-                  <div className="total-items">Itens: 2 </div>
+                  <div className="total-items">Qtd:1</div>
                   <div className="price-order-buy"> Valor: R$:90</div>
                   <div className="price-frete"> Frete: R$:11</div>
                   <div className="subtotal-order">Total: R$:101</div>
