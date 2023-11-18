@@ -6,7 +6,7 @@ import CamisaManga from "../../img/Roupas/imagem2.png";
 const dadosOrder = [
     {
       id_user: 1,
-      pedido: 123456789,
+      pedido: 708659726,
       name: "Jaqueta laranja",
       descricao:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
@@ -104,7 +104,7 @@ const dadosOrder = [
     {
       id_user: 3,
       pedido: 741852963,
-      name: "Jaqueta roxa",
+      name: "Camisa branca",
       descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
       price: 80,
       img: CamisaBranca,

@@ -3,7 +3,7 @@ import './index.css'
 function Logo () {
     return(
         <div className='logo'>
-            <img src={logo} alt='Logo' />
+            
             <h2>PedidosOnline</h2>
         </div>
     )

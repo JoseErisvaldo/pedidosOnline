@@ -29,9 +29,6 @@ function Header() {
         <li>
           <Link to="/categorias">Categorias</Link>
         </li>
-        <li>
-          <Link to="/sobre">Sobre</Link>
-        </li>
       </ul>
     </div>
   );
